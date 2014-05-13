@@ -1,1 +1,20 @@
-<h1>Hey</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>lowbudget/nobudget</title>
+  </head>
+  <body>
+    <% if logged_in? %>
+      <p>Hey, <%= current_user.username %>.</p>
+    <% end %>
+
+    <a href="/users/new/">signup</a>
+    <a href="/session/new">Login</a>
+    <h1>Welcome to lowbudget/nobudget</h1>
+    <h2>The place to meet fellow filmmakers and actors</h2>
+  </body>
+
+
+
+</html>
