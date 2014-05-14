@@ -24,9 +24,22 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+group :development, :test do
+# rspec for rails. set up with `rails g rpsec:install`
+# https://github.com/rspec/rspec-rails
+  gem 'rspec-rails'
+# sets rails console to open in pry instead of irb
+# https://github.com/rweng/pry-rails
+  gem 'pry-rails'
+# command line tool. run `$ annotate`. annotates models with schema data
+# https://github.com/ctran/annotate_models
+  gem 'annotate'
+# one liners to test common rails functionality
+# https://github.com/thoughtbot/shoulda-matchers
+  gem 'shoulda-matchers'
+end
+
 gem 'spring',        group: :development
-
-
 
 gem 'bcrypt'
 

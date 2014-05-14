@@ -1,0 +1,9 @@
+<h1>Add a movie or reel</h1>
+
+  <%= form_for(@video) do |f| %>
+    <%= f.label(:add_video) %>
+    <%= f.text_field(:url) %>
+    <%= f.submit %>
+
+    <% end %>
+
