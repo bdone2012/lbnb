@@ -23,6 +23,8 @@
           <h2>Current points</h2>
 
           <p><%= current_user.point %></p>
+          <a href="/users/">Search</a>
+          <a href="/">Home</a>
 
 
     <% else %>
@@ -41,11 +43,20 @@
 
         <h2><%= @current_page.point %></h2>
 
+         <h2>Fav Movies</h2>
+       <p> <% @current_page.movies.map do |mov| %></p>
+             <%= mov.fav_movie %>
+          <% end %>
+
+
           <%= form_for(@user) do |f| %>
-            <%= f.label(:give_point) %>
+            <%= f.label(:give_points) %>
             <%= f.text_field(:point) %>
             <%= f.submit %>
           <% end %>
+
+          <a href="/users/">Search</a>
+          <a href="/">Home</a>
 
 <% end %>
 

@@ -1,0 +1,15 @@
+<h1>Choose a person</h1>
+
+<% @user.map do |use| %>
+  <a href="/users/<%=use.id%>"><%= use.username %></a>
+<% end %>
+
+<a href="/">Home</a>
+
+
+
+
+
+
+
+
