@@ -9,7 +9,7 @@ class MoviesController < ApplicationController
     #gives the movie the user_id
     @movie[:user_id] = session[:user_id]
     if @movie.save
-      redirect_to("/users")
+      redirect_to user_path(session[:user_id])
     end
 
   end

@@ -1,0 +1,52 @@
+ <% if current_user.id == params["id"].to_i %>
+
+      <h1><%= current_user.username %></h1>
+
+     <a href="/movies/new">Add a favorite movie</a>
+     <a href="/videos/new">Add a short film or reel!</a>
+
+     <h2>Suweet Vids</h2>
+     <p><% current_user.videos.map do |vid| %></p>
+     <%# binding.pry %>
+          <embed
+          width="420" height="345"
+          src="<%= vid.url %>"
+          type="application/x-shockwave-flash">
+          </embed>
+        <% end %>
+
+      <h2>Fav Movies</h2>
+       <p> <% current_user.movies.map do |mov| %></p>
+             <%= mov.fav_movie %>
+          <% end %>
+
+          <h2>Current points</h2>
+
+          <p><%= current_user.point %></p>
+
+
+    <% else %>
+
+     <%# binding.pry %>
+        <h1><%= @current_page.username %></h1>
+
+  <h2>Suweet Vids</h2>
+     <p><% @current_page.videos.map.each do |vid| %></p>
+          <embed
+          width="420" height="345"
+          src="<%= vid.url %>"
+          type="application/x-shockwave-flash">
+          </embed>
+        <% end %>
+
+        <h2><%= @current_page.point %></h2>
+
+          <%= form_for(@user) do |f| %>
+            <%= f.label(:give_point) %>
+            <%= f.text_field(:point) %>
+            <%= f.submit %>
+          <% end %>
+
+<% end %>
+
+
