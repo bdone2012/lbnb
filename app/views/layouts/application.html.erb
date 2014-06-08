@@ -5,12 +5,15 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT: 700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <div id="logged_in">
   <% if logged_in? %>
-
-      <p>Logged in as: <%= current_user.username %>.</p>
+      <p><%= current_user.username %>.</p>
+          <p>Current points: <%= current_user.point %></p>
   <% end %>
+  </div>
 
 <%= yield %>
 

@@ -13,3 +13,246 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  background-image:url('Film_Crew (1).jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 15px;
+ }
+
+ h1 {
+  font-family: Old Standard TT;
+  font-size: 50px;
+  color: #f2e7e4;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 black, 2px 2px 0 rgba(0,0,0,.2);
+ }
+
+  h2 {
+  font-family: Old Standard TT;
+  font-size: 28 px;
+  color: #f2e7e4;
+ /* background: red;*/
+ }
+
+ #logged_in {
+  padding: 0px;
+  float: right;
+ /* background: green;*/
+ }
+
+ a {
+  background: #f2e7e4;
+  padding: 4px;
+  text-decoration: none;
+  border-radius: 1px;
+  box-shadow: 2px 2px 1px #333333;
+  font-size: 18px;
+  margin-top: -30px;
+  color: black;
+ }
+
+ a:hover {
+color: #0000FF;
+}
+
+span:hover {
+color: #1874CD;
+}
+
+header {
+ color: #f2e7e4;
+  margin: 7px 50px 20px 50px;
+  padding-bottom: 20px;
+ /* background: purple;*/
+}
+
+nav {
+  border-top: 2px solid #f2e7e4;
+  border-bottom: 2px solid #f2e7e4;
+  text-align: center;
+  margin-top: -20px;
+  background: #303030;
+  color: #f2e7e4;;
+  padding: 20px;
+
+ /* background: orange;*/
+}
+
+  #writer {
+  opacity: 0.8;
+  background: #f2e7e4;
+  width: 30%;
+  padding: 1px 0 1px 10px;
+  margin-left: 0%;
+  border-radius: 50px;
+ }
+
+ #writer p {
+  font-size: 22px;
+ }
+
+ #director {
+  opacity: 0.8;
+  background: #f2e7e4;
+  width: 30%;
+  padding: 1px 0 1px 10px;
+  margin-left: 10%;
+  border-radius: 50px;
+ }
+
+ #director p {
+  font-size: 22px;
+ }
+
+  #dp {
+  opacity: 0.8;
+  background: #f2e7e4;
+  width: 30%;
+  padding: 1px 0 1px 10px;
+  margin-left: 20%;
+  border-radius: 50px;
+ }
+
+ #dp p {
+  font-size: 22px;
+ }
+
+
+ #boom {
+  opacity: 0.8;
+  background: #f2e7e4;
+  width: 30%;
+  padding: 1px 0 1px 10px;
+  margin-left: 30%;
+  border-radius: 50px;
+ }
+
+ #boom p {
+  font-size: 22px;
+ }
+
+  #ad {
+  opacity: 0.8;
+  background: #f2e7e4;
+  width: 30%;
+  padding: 1px 0 1px 10px;
+  margin-left: 50%;
+  border-radius: 50px;
+ }
+
+ #ad p {
+  font-size: 22px;
+ }
+
+#pa {
+  opacity: 0.8;
+  background: #f2e7e4;
+  width: 30%;
+  padding: 1px 0 1px 10px;
+  margin-left: 70%;
+  border-radius: 50px;
+ }
+
+ #pa p {
+  font-size: 22px;
+ }
+
+ li {
+  list-style-type: none;
+  float: left;
+  font-size: 28px;
+  padding-left: 20px;
+ }
+
+ #primary-nav {
+  display: inline;
+ }
+
+/* #boom_bubbles {
+  margin: -125px 0 0;
+ }*/
+
+/* .bubble1 {
+    border-radius: 100px;
+    opacity: 0.8;
+    background: #f2e7e4;
+    max-width: 17px;
+    max-height: 17px;
+    color: #f2e7e4;
+    margin-left: 49%;
+}
+
+ .bubble2 {
+    border-radius: 15px;
+    opacity: 0.8;
+    background: #f2e7e4;
+    max-width: 17px;
+    max-height: 17px;
+    color: #f2e7e4;
+    margin-left: 48%;
+}
+
+   .bubble3 {
+      border-radius: 15px;
+      opacity: 0.8;
+      background: #f2e7e4;
+      max-width: 17px;
+      max-height: 17px;
+      color: #f2e7e4;
+      margin-left: 47%;
+  }*/
+
+ embed {
+  margin-left: 40px;
+ }
+
+ .fav_movies {
+    opacity: 0.8;
+    background: #f2e7e4;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 7px 7px 5px #333333;
+    margin: 40px;
+
+ }
+
+ .fav_movies h2 {
+    color: black;
+    text-align: center;
+ }
+
+ .video_box {
+    opacity: 0.8;
+    box-shadow: 7px 7px 5px #333333;
+    background: #f2e7e4;
+    max-width: 35%;
+    float: left;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 5px 40px 10px 0;
+    margin: 40px;
+ }
+
+ .video_box h2 {
+    color: black;
+    text-align: center;
+ }
+
+
+/* #points {
+  margin-left: 500px;
+  text-align: center;
+  color: black;
+  opacity: 0.8;
+  background: #f2e7e4;
+  width: 25%;
+ }
+
+ #points h2 {
+  color: black;
+ }*/

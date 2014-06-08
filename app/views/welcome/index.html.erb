@@ -2,18 +2,107 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>lowbudget/nobudget</title>
+    <title>Lowbudget/Nobudget</title>
   </head>
   <body>
 
+    <header>
+       <h1>Lowbudget/Nobudget</h1>
 
-    <a href="/users/new/">signup</a>
-    <a href="/session/new">Login</a>
-    <h1>Welcome to lowbudget/nobudget</h1>
-    <h2>The place to meet fellow filmmakers and actors</h2>
-    <a href="/users/">Search</a>
+     <nav>
+      <div id="names">
+       <ul id="primary-nav">
+        <div id="writer_name">
+          <li><span>The Writer</span> |</li>
+        </div>
 
-    <a href="/users/<%= current_user.id %>">Profile</a>
+        <div id="director_name">
+         <li><span>The Director</span> |</li>
+        </div>
+
+        <div id="dp_name">
+          <li><span>The DP/Camera Op</span> |</li>
+        </div>
+
+        <div id="boom_name">
+         <li><span>The Boom Op</span> |</li>
+        </div>
+
+        <div id="ad_name">
+         <li><span>The AD</span> |</li>
+        </div>
+
+        <div id="pa_name">
+         <li><span>The PA</span></li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <div id="thoughts">
+    <div id="writer">
+     <p>"I’m the writer of this film. George was looking for a screenplay and I was happy to oblige because I want to see some more of my work on the big screen. I’ll also be using my points to get someone to edit my next script."
+    </p>
+   </div>
+
+    <div id="director">
+     <p>"I get skill points for every day I work as a gapher, then use them so I can direct my films."
+    </p>
+   </div>
+
+    <div id="dp">
+     <p>"I found a reliable director to  work with on Lowbudget/Nobudget, now we do all our shoots together."
+    </p>
+   </div>
+
+   <div id="boom">
+     <p>"I’m getting a point for holding this boom pole, so I can get someone to hold the boom on my next shoot."
+    </p>
+   </div>
+
+   <div id="ad">
+     <p>"I always AD for George, but now he has to give me points for my work, that way I know I can count on him the next time I’m producing something."
+    </p>
+   </div>
+
+    <div id="pa">
+     <p>"I set up a profile on Lowbudget/Nobudget so I can see if I like working on film sets. George contacted me to work on his film."
+    </p>
+    </div>
+   </div>
+
+
+
+<!--   <div id="bubbles">
+
+    <div id="boom_bubbles">
+
+      <div class="bubble1">
+       <p>H</p>
+      </div>
+
+
+    <div class="bubble2">
+      <p>H</p>
+    </div>
+
+      <div class="bubble3">
+        <p>H</p>
+      </div>
+     </div>
+
+  </div> -->
+
+  <footer>
+      <a href="/users/new/">Signup</a>
+      <a href="/session/new">Login</a>
+      <a href="/users/">Browse</a>
+      <% if logged_in? %>
+        <a href="/users/<%= current_user.id %>">Profile</a>
+      <% end %>
+  </footer>
+
   </body>
 
 
