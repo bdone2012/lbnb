@@ -1,12 +1,19 @@
+<% if logged_in? %>
  <% if current_user.id == params["id"].to_i %>
 
       <h1><%= current_user.username %>'s Profile</h1>
 
+      <div class="bar">
+        <p>Hello</p>
+      </div>
+
       <nav>
-        <a href="/">Home</a>
+        <div class="user_nav">
+       <!--  <a href="/">Home</a> -->
         <a href="/users/">Browse</a>
         <a href="/videos/new">Add reel</a>
         <a href="/movies/new">Add fav movie</a>
+      </div>
       </nav>
 
       <div class="video_box">
@@ -29,8 +36,30 @@
 
   <% else %>
 
-        <h1><%= @current_page.username %></h1>
+        <h1><%= @current_page.username %>'s Profile</h1>
+
+      <nav>
+        <div class="user_nav">
+          <!-- <a href="/">Home</a> -->
+          <a href="/users/">Browse</a>
+          <a href="/videos/new">Add reel</a>
+          <a href="/movies/new">Add fav movie</a>
+          <a href="/users/<%= current_user.id %>"><%= current_user.username %></a>
+        </div>
+      </nav>
+
+       <div id="give_points">
+        <h2><%= @current_page.username %> has <%= @current_page.point %> Points</h2>
+          <%= form_for(@user) do |f| %>
+            <%= f.label(:give_points) %>
+            <%= f.text_field(:point) %>
+            <%= f.submit %>
+          <% end %>
+        </div>
+
   <div class="video_box">
+
+
     <h2>Videos</h2>
      <p><% @current_page.videos.map.each do |vid| %></p>
           <embed
@@ -41,7 +70,6 @@
         <% end %>
       </div>
 
-        <h2><%= @current_page.point %></h2>
 
         <div class="fav_movies">
          <h2>Fav Movies</h2>
@@ -51,12 +79,12 @@
           </p>
         </div>
 
-          <%= form_for(@user) do |f| %>
-            <%= f.label(:give_points) %>
-            <%= f.text_field(:point) %>
-            <%= f.submit %>
-          <% end %>
 
+  <% end %>
+  <% else %>
+  <h1>Please login or sign up</h1>
+  <a href="/users/new/">Signup</a>
+  <a href="/session/new">Login</a>
 <% end %>
 
 

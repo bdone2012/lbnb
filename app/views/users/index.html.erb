@@ -1,10 +1,20 @@
+<div id="browse_nav">
+<!-- <a href="/">Home</a> -->
+<% if logged_in? %>
+  <a href="/users/<%= current_user.id %>"><%= current_user.username %></a>
+<% end %>
+</div>
+
+
 <h1>Choose a person</h1>
 
-<% @user.map do |use| %>
-  <a href="/users/<%=use.id%>"><%= use.username %></a>
-<% end %>
+      <div class="bar">
+        <% @user.map do |use| %>
+          <a href="/users/<%=use.id%>"><%= use.username %></a>
+        <% end %>
+      </div>
 
-<a href="/">Home</a>
+
 
 
 

@@ -1,9 +1,9 @@
 <h1>Add a movie or reel</h1>
-<h2>This should be a youtube link:<h2>
+<div id="videos_new">
   <%= form_for(@video) do |f| %>
-    <%= f.label(:add_video) %>
+    <%= f.label(:this_should_be_a_youtube_link) %>
     <%= f.text_field(:url) %>
     <%= f.submit %>
 
     <% end %>
-
+</div>

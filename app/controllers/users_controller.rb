@@ -2,7 +2,6 @@ class UsersController < ApplicationController
 
   def index
     @user = User.all
-    # binding.pry
   end
 
   def new
@@ -20,7 +19,6 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by(id: params[:id])
-    # binding.pry
     @current_page = User.find_by(id: params[:id])
   end
 
@@ -28,7 +26,6 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
     @current_page = User.find_by(id: params[:id])
     @user.update(point: @current_page.point + ((params["user"]["point"]).to_i))
-    binding.pry
       current_user.update(point: current_user.point - ((params["user"]["point"]).to_i))
        if @user.save
       redirect_to user_path(@user)

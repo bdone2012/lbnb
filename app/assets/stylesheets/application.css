@@ -65,19 +65,24 @@ header {
  color: #f2e7e4;
   margin: 7px 50px 20px 50px;
   padding-bottom: 20px;
- /* background: purple;*/
 }
 
-nav {
+#names {
   border-top: 2px solid #f2e7e4;
   border-bottom: 2px solid #f2e7e4;
-  text-align: center;
   margin-top: -20px;
   background: #303030;
-  color: #f2e7e4;;
-  padding: 20px;
+  color: #f2e7e4;
+  padding: 15px 0px 35px 0px;
+}
 
- /* background: orange;*/
+.bar {
+  border-top: 2px solid #f2e7e4;
+  border-bottom: 2px solid #f2e7e4;
+  margin-top: -20px;
+  background: #303030;
+  color: #303030;
+  padding: 10px 0px 10px 0px;
 }
 
   #writer {
@@ -168,6 +173,7 @@ nav {
 
  #primary-nav {
   display: inline;
+  margin-top: -25px;
  }
 
 /* #boom_bubbles {
@@ -243,6 +249,68 @@ nav {
     text-align: center;
  }
 
+footer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#browse_nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.user_nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#users_new {
+   border-top: 4px solid #f2e7e4;
+  border-bottom: 3px solid #f2e7e4;
+  margin-top: -20px;
+  background: #303030;
+  color: #f2e7e4;;
+  padding: 15px;
+}
+
+#session_new {
+   border-top: 4px solid #f2e7e4;
+  border-bottom: 3px solid #f2e7e4;
+  margin-top: -20px;
+  background: #303030;
+  color: #f2e7e4;;
+  padding: 15px;
+}
+
+#give_points {
+   border-top: 4px solid #f2e7e4;
+  border-bottom: 3px solid #f2e7e4;
+  margin-top: -20px;
+  background: #303030;
+  color: #f2e7e4;;
+  padding: 15px;
+}
+
+#movies_new {
+  border-top: 4px solid #f2e7e4;
+  border-bottom: 3px solid #f2e7e4;
+  margin-top: -20px;
+  background: #303030;
+  color: #f2e7e4;;
+  padding: 15px;
+}
+
+#videos_new {
+  border-top: 4px solid #f2e7e4;
+  border-bottom: 3px solid #f2e7e4;
+  margin-top: -20px;
+  background: #303030;
+  color: #f2e7e4;;
+  padding: 15px;
+}
 
 /* #points {
   margin-left: 500px;

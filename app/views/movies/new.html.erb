@@ -2,13 +2,13 @@
 
   <h1>Add a Favorite movie</h1>
 
-
+  <div id="movies_new">
   <%= form_for(@movie) do |f| %>
     <%= f.label(:name_of_movie) %>
     <%= f.text_field(:fav_movie) %>
     <%= f.submit %>
 
     <% end %>
-
+</div>
 </body>
 

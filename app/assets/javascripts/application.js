@@ -15,13 +15,8 @@
 //= require turbolinks
 //= require_tree .
 
-// $('nav li').click(toggleMenu);
 
-// function toggleMenu() {
-
-// }
 $(document).ready(function() {
-
 
   $("#writer").hide();
   $( '#writer_name').click(function(){
@@ -57,9 +52,11 @@ $(document).ready(function() {
   $( '#pa_name').click(function(){
   $("#pa").toggle();
   $("#pa").siblings().hide();
+
   });
 
  });
+
 
 
 

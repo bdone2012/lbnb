@@ -99,8 +99,8 @@
       <a href="/session/new">Login</a>
       <a href="/users/">Browse</a>
       <% if logged_in? %>
-        <a href="/users/<%= current_user.id %>">Profile</a>
-      <% end %>
+  <a href="/users/<%= current_user.id %>"><%= current_user.username %></a>
+<% end %>
   </footer>
 
   </body>

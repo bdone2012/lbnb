@@ -10,7 +10,6 @@ class VideosController < ApplicationController
     desired_url = "http://www.youtube.com/v/#{half_url}"
     @video[:user_id] = session[:user_id]
     @video.update(url: desired_url)
-    # binding.pry
     if @video.save
       redirect_to user_path(session[:user_id])
     end
